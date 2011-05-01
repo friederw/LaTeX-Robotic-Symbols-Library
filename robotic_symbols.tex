@@ -1,0 +1,67 @@
+%author: Frieder Wittmann, frieder@wittmann-online.net
+%license: GPL
+
+\newcommand{\state}{\mathbf{x}}
+\newcommand{\dstate}{\mathbf{\dot{x}}}
+\newcommand{\ddstate}{\mathbf{\ddot{x}}} 
+\newcommand{\q}{\mathbf{q}}
+\newcommand{\dq}{\mathbf{\dot{q}}}
+\newcommand{\ddq}{\mathbf{\ddot{q}}} 
+%\newcommand{\state}{\mathbf{x}}
+%\newcommand{\dstate}{\mathbf{\dot{x}}}
+%\newcommand{\ddstate}{\mathbf{\ddot{x}}} 
+%\newcommand{\state}{\mathbf{x}}
+%\newcommand{\dstate}{\mathbf{\dot{x}}}
+%\newcommand{\ddstate}{\mathbf{\ddot{x}}} 
+\newcommand{\qrl}{\mathbf{q}_{rl}}
+\newcommand{\dqrl}{\mathbf{\dot{q}}_{rl}}
+\newcommand{\ddqrl}{\mathbf{\ddot{q}}_{rl}} 
+
+
+\newcommand{\gf}{\boldsymbol{\tau}_{}} 
+\newcommand{\gfob}{\boldsymbol{\tau}_{o}} %oberved
+\newcommand{\gferr}{\boldsymbol{\tau}_{e}} %error
+\newcommand{\gfact}{\boldsymbol{\tau}_{a}} %actuation
+\newcommand{\gfext}{\boldsymbol{\tau}_{x}} %external
+\newcommand{\gfoff}{\boldsymbol{\tau}_{\Delta}} %offset
+\newcommand{\gfr}{\boldsymbol{\tau}_{r}} %left leg
+\newcommand{\gfl}{\boldsymbol{\tau_{l}}} %right leg
+\newcommand{\gfroff}{\boldsymbol{\Delta \tau}_r} 
+\newcommand{\gfloff}{\boldsymbol{\Delta \tau}_l} 
+\newcommand{\gfrerr}{\boldsymbol{\Delta \tau}_{r,e}} %error 
+\newcommand{\gflerr}{\boldsymbol{\Delta \tau}_{l,e}} %error
+
+
+\newcommand{\reg}{\mathbf{Y}} 
+\newcommand{\regob}{\mathbf{Y}_{o}} 
+\newcommand{\regoff}{\mathbf{Y}_{\Delta}} 
+\newcommand{\greg}{\mathbf{Y_g}} 
+\newcommand{\gregob}{\mathbf{Y_g}_{o}} 
+\newcommand{\gregoff}{\mathbf{Y_g}_{\Delta}} 
+
+
+\newcommand{\para}{\mathbf{b}} %parameters to identify
+\newcommand{\gpara}{\mathbf{b_g}} %gravity parameters to identify
+\newcommand{\dpara}{\mathbf{b_d}} %dynamic parameters to identify
+\newcommand{\dimpara}{{b}} % number of parameters to identify
+\newcommand{\dimgpara}{{b_g}} %number of  parameters to identify
+\newcommand{\dimdpara}{{b_d}} %number of  parameters to identify
+\newcommand{\NofJoints}{{J}} %number of  joints
+
+\newcommand{\LBR}{\textit{DLR Light Weight Robot (LBR)}\ }
+\newcommand{\DLRbiped}{\textit{DLR Biped}\ }
+\newcommand{\rightfootwrench}{\mathbf{w}_r}
+\newcommand{\leftfootwrench}{\mathbf{w}_l}
+\newcommand{\measuredrightfootwrench}{\mathbf{w}_{r,m}}
+\newcommand{\measuredleftfootwrench}{\mathbf{w}_{l,m}}
+\newcommand{\observedrightfootwrench}{\mathbf{w}_{r,o}}
+\newcommand{\observedleftfootwrench}{\mathbf{w}_{l,o}}
+\newcommand{\JacobianqR}{\mathbf{J_{qR}(q)}}
+\newcommand{\JacobianqL}{\mathbf{J_{qL}(q)}}
+\newcommand{\JacobianHR}{\mathbf{J_{HR}(q_H,q_r)}} %Adjoint HR
+\newcommand{\JacobianHL}{\mathbf{J_{HL}(q_H,q_l)}} %Adjoint HL
+\newcommand{\JacobianqrR}{\mathbf{J_{q_rR}(q_r)}}
+\newcommand{\JacobianqlL}{\mathbf{J_{q_lL}(q_l)}}
+
+\newcommand{\zeromatr}[2]{\mathbf{0}^{\text{#1} \times \text{#2} }} 
+\newcommand{\Imatr}[2]{\mathbf{I}^{\text{#1} \times \text{#2} }} 
