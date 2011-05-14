@@ -1,0 +1,24 @@
+A Robotic Symbols Library project for LaTeX
+started by Frieder Wittmann, frieder@wittmann-online.net
+license: GPL
+
+usage: 
+-----
+
+Simply copy all commands that you need from robotic_symbols.tex to your LaTeX file or download the file to the folder of your LaTeX project and insert it with
+$ \input{robotic_symbols.tex}
+Then use the commands in your latex file. Example 
+$ \ddq $
+
+extending standardizing and forking:
+-----------------------------------
+
+I couldn't find anything like this, so I started migrating all symbols I'm using in my thesis to this tex file. I hope, to not only save time long term but also to foster standardization of annotations in robotics. 
+I'm well aware, that the number of acceptable characters is limited and hence there will probably never be to much of a standard. So happy forking! Still its worth trying to push it as much possible. I appreciate every second where I DONT have to think about good annotation.
+
+Some references for annotations that I personally think are fairly standard for the most common variables but also practical and well readable:
+
+- 
+
+
+ 

@@ -4,26 +4,37 @@
 \newcommand{\state}{\mathbf{x}}
 \newcommand{\dstate}{\mathbf{\dot{x}}}
 \newcommand{\ddstate}{\mathbf{\ddot{x}}} 
+\newcommand{\stateObserved}{\mathbf{x}_o}
+\newcommand{\dstateObserved}{\mathbf{\dot{x}}_o}
+\newcommand{\ddstateObserved}{\mathbf{\ddot{x}}_o} 
+\newcommand{\ContState}{\mathbf{s}}
+\newcommand{\dContState}{\mathbf{\dot{s}}}
+\newcommand{\ddContState}{\mathbf{\ddot{s}}} 
 \newcommand{\q}{\mathbf{q}}
 \newcommand{\dq}{\mathbf{\dot{q}}}
 \newcommand{\ddq}{\mathbf{\ddot{q}}} 
-%\newcommand{\state}{\mathbf{x}}
-%\newcommand{\dstate}{\mathbf{\dot{x}}}
-%\newcommand{\ddstate}{\mathbf{\ddot{x}}} 
-%\newcommand{\state}{\mathbf{x}}
-%\newcommand{\dstate}{\mathbf{\dot{x}}}
-%\newcommand{\ddstate}{\mathbf{\ddot{x}}} 
 \newcommand{\qrl}{\mathbf{q}_{rl}}
 \newcommand{\dqrl}{\mathbf{\dot{q}}_{rl}}
 \newcommand{\ddqrl}{\mathbf{\ddot{q}}_{rl}} 
-
+\newcommand{\qr}{\mathbf{q}_{r}}
+\newcommand{\dqr}{\mathbf{\dot{q}}_{r}}
+\newcommand{\ddqr}{\mathbf{\ddot{q}}_{r}} 
+\newcommand{\ql}{\mathbf{q}_{l}}
+\newcommand{\dql}{\mathbf{\dot{q}}_{l}}
+\newcommand{\ddql}{\mathbf{\ddot{q}}_{l}} 
+\newcommand{\motorpos}{\boldsymbol{\theta}_{rl}}
+\newcommand{\dmotorpos}{\boldsymbol{\dot{\theta}}_{rl}}
 
 \newcommand{\gf}{\boldsymbol{\tau}_{}} 
+\newcommand{\gfContact}{\boldsymbol{\tau}_{c}} %contact gf
+\newcommand{\gfContactFunction}{\boldsymbol{f_\tau}_c} %contact gf 
 \newcommand{\gfob}{\boldsymbol{\tau}_{o}} %oberved
+\newcommand{\gfObserved}{\boldsymbol{\tau}_{o}} %oberved (compatib.)
+\newcommand{\gfPredicted}{\boldsymbol{\tau}_{p}} %predicted
 \newcommand{\gferr}{\boldsymbol{\tau}_{e}} %error
 \newcommand{\gfact}{\boldsymbol{\tau}_{a}} %actuation
 \newcommand{\gfext}{\boldsymbol{\tau}_{x}} %external
-\newcommand{\gfoff}{\boldsymbol{\tau}_{\Delta}} %offset
+\newcommand{\gfoff}{\boldsymbol{\tau}_{\text{off}}} %offset
 \newcommand{\gfr}{\boldsymbol{\tau}_{r}} %left leg
 \newcommand{\gfl}{\boldsymbol{\tau_{l}}} %right leg
 \newcommand{\gfroff}{\boldsymbol{\Delta \tau}_r} 
@@ -31,14 +42,18 @@
 \newcommand{\gfrerr}{\boldsymbol{\Delta \tau}_{r,e}} %error 
 \newcommand{\gflerr}{\boldsymbol{\Delta \tau}_{l,e}} %error
 
+\newcommand{\jointtorqueR}{\boldsymbol{\tau}_{r}}
+\newcommand{\jointtorqueL}{\boldsymbol{\tau}_{l}} 
+\newcommand{\inputVariable}{\mathbf{u}}
 
+
+%\newcommand{\Regressor}{\mathbf{Y}}
 \newcommand{\reg}{\mathbf{Y}} 
 \newcommand{\regob}{\mathbf{Y}_{o}} 
 \newcommand{\regoff}{\mathbf{Y}_{\Delta}} 
 \newcommand{\greg}{\mathbf{Y_g}} 
 \newcommand{\gregob}{\mathbf{Y_g}_{o}} 
 \newcommand{\gregoff}{\mathbf{Y_g}_{\Delta}} 
-
 
 \newcommand{\para}{\mathbf{b}} %parameters to identify
 \newcommand{\gpara}{\mathbf{b_g}} %gravity parameters to identify
@@ -47,8 +62,16 @@
 \newcommand{\dimgpara}{{b_g}} %number of  parameters to identify
 \newcommand{\dimdpara}{{b_d}} %number of  parameters to identify
 \newcommand{\NofJoints}{{J}} %number of  joints
+\newcommand{\NofPoses}{{P}} %number of  poses
+\newcommand{\NofDOF}{{N}} %number of  DOF
 
-\newcommand{\LBR}{\textit{DLR Light Weight Robot (LBR)}\ }
+\newcommand{\DLRfullTrans}{\textit{German Aerospace Center (Deutsches Zentrum für Luft und Raumfahrt, DLR)}\ }
+\newcommand{\DLR}{\textit{DLR}\ }
+\newcommand{\RM}{\textit{RM}\ }
+\newcommand{\RMFullTrans}{\textit{Institute for Robotics and Mechatronics (RM)}\ }
+\newcommand{\DLRLBR}{\textit{DLR Light Weight Robot III}\ }
+\newcommand{\LBR}{\textit{LWR}\ }
+\newcommand{\LWR}{\textit{LWR}\ }
 \newcommand{\DLRbiped}{\textit{DLR Biped}\ }
 \newcommand{\rightfootwrench}{\mathbf{w}_r}
 \newcommand{\leftfootwrench}{\mathbf{w}_l}
@@ -65,3 +88,4 @@
 
 \newcommand{\zeromatr}[2]{\mathbf{0}^{\text{#1} \times \text{#2} }} 
 \newcommand{\Imatr}[2]{\mathbf{I}^{\text{#1} \times \text{#2} }} 
+
